@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83D7ED1820A696EB003B23DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED1720A696EB003B23DA /* AppDelegate.swift */; };
+		83D7ED1A20A696EB003B23DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED1920A696EB003B23DA /* ViewController.swift */; };
+		83D7ED1D20A696EB003B23DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D7ED1B20A696EB003B23DA /* Main.storyboard */; };
+		83D7ED1F20A696EB003B23DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D7ED1E20A696EB003B23DA /* Assets.xcassets */; };
+		83D7ED2220A696EB003B23DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D7ED2020A696EB003B23DA /* LaunchScreen.storyboard */; };
+		83D7ED2D20A696EB003B23DA /* TuneTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED2C20A696EB003B23DA /* TuneTalkTests.swift */; };
+		83D7ED3820A696EC003B23DA /* TuneTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED3720A696EC003B23DA /* TuneTalkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83D7ED2920A696EB003B23DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83D7ED0C20A696EB003B23DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83D7ED1320A696EB003B23DA;
+			remoteInfo = TuneTalk;
+		};
+		83D7ED3420A696EC003B23DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83D7ED0C20A696EB003B23DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83D7ED1320A696EB003B23DA;
+			remoteInfo = TuneTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83D7ED1420A696EB003B23DA /* TuneTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuneTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D7ED1720A696EB003B23DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83D7ED1920A696EB003B23DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83D7ED1C20A696EB003B23DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83D7ED1E20A696EB003B23DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83D7ED2120A696EB003B23DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83D7ED2320A696EB003B23DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D7ED2820A696EB003B23DA /* TuneTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D7ED2C20A696EB003B23DA /* TuneTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneTalkTests.swift; sourceTree = "<group>"; };
+		83D7ED2E20A696EC003B23DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D7ED3320A696EC003B23DA /* TuneTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D7ED3720A696EC003B23DA /* TuneTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneTalkUITests.swift; sourceTree = "<group>"; };
+		83D7ED3920A696EC003B23DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83D7ED1120A696EB003B23DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D7ED2520A696EB003B23DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D7ED3020A696EC003B23DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83D7ED0B20A696EB003B23DA = {
+			isa = PBXGroup;
+			children = (
+				83D7ED1620A696EB003B23DA /* TuneTalk */,
+				83D7ED2B20A696EB003B23DA /* TuneTalkTests */,
+				83D7ED3620A696EC003B23DA /* TuneTalkUITests */,
+				83D7ED1520A696EB003B23DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83D7ED1520A696EB003B23DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83D7ED1420A696EB003B23DA /* TuneTalk.app */,
+				83D7ED2820A696EB003B23DA /* TuneTalkTests.xctest */,
+				83D7ED3320A696EC003B23DA /* TuneTalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83D7ED1620A696EB003B23DA /* TuneTalk */ = {
+			isa = PBXGroup;
+			children = (
+				83D7ED1720A696EB003B23DA /* AppDelegate.swift */,
+				83D7ED1920A696EB003B23DA /* ViewController.swift */,
+				83D7ED1B20A696EB003B23DA /* Main.storyboard */,
+				83D7ED1E20A696EB003B23DA /* Assets.xcassets */,
+				83D7ED2020A696EB003B23DA /* LaunchScreen.storyboard */,
+				83D7ED2320A696EB003B23DA /* Info.plist */,
+			);
+			path = TuneTalk;
+			sourceTree = "<group>";
+		};
+		83D7ED2B20A696EB003B23DA /* TuneTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				83D7ED2C20A696EB003B23DA /* TuneTalkTests.swift */,
+				83D7ED2E20A696EC003B23DA /* Info.plist */,
+			);
+			path = TuneTalkTests;
+			sourceTree = "<group>";
+		};
+		83D7ED3620A696EC003B23DA /* TuneTalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83D7ED3720A696EC003B23DA /* TuneTalkUITests.swift */,
+				83D7ED3920A696EC003B23DA /* Info.plist */,
+			);
+			path = TuneTalkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83D7ED1320A696EB003B23DA /* TuneTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83D7ED3C20A696EC003B23DA /* Build configuration list for PBXNativeTarget "TuneTalk" */;
+			buildPhases = (
+				83D7ED1020A696EB003B23DA /* Sources */,
+				83D7ED1120A696EB003B23DA /* Frameworks */,
+				83D7ED1220A696EB003B23DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuneTalk;
+			productName = TuneTalk;
+			productReference = 83D7ED1420A696EB003B23DA /* TuneTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83D7ED2720A696EB003B23DA /* TuneTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83D7ED3F20A696EC003B23DA /* Build configuration list for PBXNativeTarget "TuneTalkTests" */;
+			buildPhases = (
+				83D7ED2420A696EB003B23DA /* Sources */,
+				83D7ED2520A696EB003B23DA /* Frameworks */,
+				83D7ED2620A696EB003B23DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83D7ED2A20A696EB003B23DA /* PBXTargetDependency */,
+			);
+			name = TuneTalkTests;
+			productName = TuneTalkTests;
+			productReference = 83D7ED2820A696EB003B23DA /* TuneTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83D7ED3220A696EC003B23DA /* TuneTalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83D7ED4220A696EC003B23DA /* Build configuration list for PBXNativeTarget "TuneTalkUITests" */;
+			buildPhases = (
+				83D7ED2F20A696EC003B23DA /* Sources */,
+				83D7ED3020A696EC003B23DA /* Frameworks */,
+				83D7ED3120A696EC003B23DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83D7ED3520A696EC003B23DA /* PBXTargetDependency */,
+			);
+			name = TuneTalkUITests;
+			productName = TuneTalkUITests;
+			productReference = 83D7ED3320A696EC003B23DA /* TuneTalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83D7ED0C20A696EB003B23DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jdidat;
+				TargetAttributes = {
+					83D7ED1320A696EB003B23DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					83D7ED2720A696EB003B23DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83D7ED1320A696EB003B23DA;
+					};
+					83D7ED3220A696EC003B23DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83D7ED1320A696EB003B23DA;
+					};
+				};
+			};
+			buildConfigurationList = 83D7ED0F20A696EB003B23DA /* Build configuration list for PBXProject "TuneTalk" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83D7ED0B20A696EB003B23DA;
+			productRefGroup = 83D7ED1520A696EB003B23DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83D7ED1320A696EB003B23DA /* TuneTalk */,
+				83D7ED2720A696EB003B23DA /* TuneTalkTests */,
+				83D7ED3220A696EC003B23DA /* TuneTalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83D7ED1220A696EB003B23DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D7ED2220A696EB003B23DA /* LaunchScreen.storyboard in Resources */,
+				83D7ED1F20A696EB003B23DA /* Assets.xcassets in Resources */,
+				83D7ED1D20A696EB003B23DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D7ED2620A696EB003B23DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D7ED3120A696EC003B23DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83D7ED1020A696EB003B23DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D7ED1A20A696EB003B23DA /* ViewController.swift in Sources */,
+				83D7ED1820A696EB003B23DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D7ED2420A696EB003B23DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D7ED2D20A696EB003B23DA /* TuneTalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D7ED2F20A696EC003B23DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D7ED3820A696EC003B23DA /* TuneTalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83D7ED2A20A696EB003B23DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83D7ED1320A696EB003B23DA /* TuneTalk */;
+			targetProxy = 83D7ED2920A696EB003B23DA /* PBXContainerItemProxy */;
+		};
+		83D7ED3520A696EC003B23DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83D7ED1320A696EB003B23DA /* TuneTalk */;
+			targetProxy = 83D7ED3420A696EC003B23DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83D7ED1B20A696EB003B23DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83D7ED1C20A696EB003B23DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83D7ED2020A696EB003B23DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83D7ED2120A696EB003B23DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83D7ED3A20A696EC003B23DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83D7ED3B20A696EC003B23DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83D7ED3D20A696EC003B23DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TuneTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdidat.TuneTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83D7ED3E20A696EC003B23DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TuneTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdidat.TuneTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83D7ED4020A696EC003B23DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TuneTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdidat.TuneTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuneTalk.app/TuneTalk";
+			};
+			name = Debug;
+		};
+		83D7ED4120A696EC003B23DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TuneTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdidat.TuneTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuneTalk.app/TuneTalk";
+			};
+			name = Release;
+		};
+		83D7ED4320A696EC003B23DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TuneTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdidat.TuneTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TuneTalk;
+			};
+			name = Debug;
+		};
+		83D7ED4420A696EC003B23DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TuneTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jdidat.TuneTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TuneTalk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83D7ED0F20A696EB003B23DA /* Build configuration list for PBXProject "TuneTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D7ED3A20A696EC003B23DA /* Debug */,
+				83D7ED3B20A696EC003B23DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83D7ED3C20A696EC003B23DA /* Build configuration list for PBXNativeTarget "TuneTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D7ED3D20A696EC003B23DA /* Debug */,
+				83D7ED3E20A696EC003B23DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83D7ED3F20A696EC003B23DA /* Build configuration list for PBXNativeTarget "TuneTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D7ED4020A696EC003B23DA /* Debug */,
+				83D7ED4120A696EC003B23DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83D7ED4220A696EC003B23DA /* Build configuration list for PBXNativeTarget "TuneTalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D7ED4320A696EC003B23DA /* Debug */,
+				83D7ED4420A696EC003B23DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83D7ED0C20A696EB003B23DA /* Project object */;
+}
