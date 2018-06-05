@@ -14,6 +14,10 @@
 		83D7ED2220A696EB003B23DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D7ED2020A696EB003B23DA /* LaunchScreen.storyboard */; };
 		83D7ED2D20A696EB003B23DA /* TuneTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED2C20A696EB003B23DA /* TuneTalkTests.swift */; };
 		83D7ED3820A696EC003B23DA /* TuneTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED3720A696EC003B23DA /* TuneTalkUITests.swift */; };
+		83D7ED4820A6B69F003B23DA /* SimilarArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED4720A6B69F003B23DA /* SimilarArtistsViewController.swift */; };
+		C5017F5C591246354BBECB72 /* Pods_TuneTalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC780411EF8E44CDD86C2CF5 /* Pods_TuneTalkTests.framework */; };
+		C8F87008FCAFC8326412096A /* Pods_TuneTalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2379D6C418EDE4C9DE111CA3 /* Pods_TuneTalkUITests.framework */; };
+		F2DCC6E08A393A86BB0546D5 /* Pods_TuneTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19C6A59346778EA6075213C /* Pods_TuneTalk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A5AA4302995B4060EE011CD /* Pods-TuneTalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalkTests/Pods-TuneTalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2379D6C418EDE4C9DE111CA3 /* Pods_TuneTalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuneTalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBC417565D91462B752EAEE /* Pods-TuneTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalk/Pods-TuneTalk.release.xcconfig"; sourceTree = "<group>"; };
+		5257C0FE4B97CFF13162E047 /* Pods-TuneTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalk/Pods-TuneTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		6279CA3A7A42CDCDE3F4D031 /* Pods-TuneTalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalkUITests/Pods-TuneTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		83D7ED1420A696EB003B23DA /* TuneTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuneTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7ED1720A696EB003B23DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D7ED1920A696EB003B23DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,11 @@
 		83D7ED3320A696EC003B23DA /* TuneTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7ED3720A696EC003B23DA /* TuneTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneTalkUITests.swift; sourceTree = "<group>"; };
 		83D7ED3920A696EC003B23DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D7ED4720A6B69F003B23DA /* SimilarArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarArtistsViewController.swift; sourceTree = "<group>"; };
+		8E2D98F261681F623FA20CEE /* Pods-TuneTalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalkTests/Pods-TuneTalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		9568391D0C6748D9757D677D /* Pods-TuneTalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalkUITests/Pods-TuneTalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A19C6A59346778EA6075213C /* Pods_TuneTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuneTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC780411EF8E44CDD86C2CF5 /* Pods_TuneTalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuneTalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2DCC6E08A393A86BB0546D5 /* Pods_TuneTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5017F5C591246354BBECB72 /* Pods_TuneTalkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F87008FCAFC8326412096A /* Pods_TuneTalkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38FC6843D90AE1279C7C629E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5257C0FE4B97CFF13162E047 /* Pods-TuneTalk.debug.xcconfig */,
+				3CBC417565D91462B752EAEE /* Pods-TuneTalk.release.xcconfig */,
+				1A5AA4302995B4060EE011CD /* Pods-TuneTalkTests.debug.xcconfig */,
+				8E2D98F261681F623FA20CEE /* Pods-TuneTalkTests.release.xcconfig */,
+				9568391D0C6748D9757D677D /* Pods-TuneTalkUITests.debug.xcconfig */,
+				6279CA3A7A42CDCDE3F4D031 /* Pods-TuneTalkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		83D7ED0B20A696EB003B23DA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +111,8 @@
 				83D7ED2B20A696EB003B23DA /* TuneTalkTests */,
 				83D7ED3620A696EC003B23DA /* TuneTalkUITests */,
 				83D7ED1520A696EB003B23DA /* Products */,
+				38FC6843D90AE1279C7C629E /* Pods */,
+				FC4DF61935B8A67FA7176501 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +135,7 @@
 				83D7ED1E20A696EB003B23DA /* Assets.xcassets */,
 				83D7ED2020A696EB003B23DA /* LaunchScreen.storyboard */,
 				83D7ED2320A696EB003B23DA /* Info.plist */,
+				83D7ED4720A6B69F003B23DA /* SimilarArtistsViewController.swift */,
 			);
 			path = TuneTalk;
 			sourceTree = "<group>";
@@ -125,6 +158,16 @@
 			path = TuneTalkUITests;
 			sourceTree = "<group>";
 		};
+		FC4DF61935B8A67FA7176501 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A19C6A59346778EA6075213C /* Pods_TuneTalk.framework */,
+				AC780411EF8E44CDD86C2CF5 /* Pods_TuneTalkTests.framework */,
+				2379D6C418EDE4C9DE111CA3 /* Pods_TuneTalkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83D7ED3C20A696EC003B23DA /* Build configuration list for PBXNativeTarget "TuneTalk" */;
 			buildPhases = (
+				2D01742599F34C07EC4AFCC1 /* [CP] Check Pods Manifest.lock */,
 				83D7ED1020A696EB003B23DA /* Sources */,
 				83D7ED1120A696EB003B23DA /* Frameworks */,
 				83D7ED1220A696EB003B23DA /* Resources */,
+				00E5CE0B16F6A1BCC07791B0 /* [CP] Embed Pods Frameworks */,
+				21FE0408678742AF402252D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83D7ED3F20A696EC003B23DA /* Build configuration list for PBXNativeTarget "TuneTalkTests" */;
 			buildPhases = (
+				B73E60F87AF530DED08F5597 /* [CP] Check Pods Manifest.lock */,
 				83D7ED2420A696EB003B23DA /* Sources */,
 				83D7ED2520A696EB003B23DA /* Frameworks */,
 				83D7ED2620A696EB003B23DA /* Resources */,
+				891078792C157B766855BE08 /* [CP] Embed Pods Frameworks */,
+				8C52F0B3612324CC38060D44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83D7ED4220A696EC003B23DA /* Build configuration list for PBXNativeTarget "TuneTalkUITests" */;
 			buildPhases = (
+				B43772DAEF490B4AA636686F /* [CP] Check Pods Manifest.lock */,
 				83D7ED2F20A696EC003B23DA /* Sources */,
 				83D7ED3020A696EC003B23DA /* Frameworks */,
 				83D7ED3120A696EC003B23DA /* Resources */,
+				875C8E0D0592E687BD596A83 /* [CP] Embed Pods Frameworks */,
+				122DBA48D3383802FDAE25F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +306,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00E5CE0B16F6A1BCC07791B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TuneTalk/Pods-TuneTalk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuneTalk/Pods-TuneTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		122DBA48D3383802FDAE25F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuneTalkUITests/Pods-TuneTalkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21FE0408678742AF402252D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuneTalk/Pods-TuneTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D01742599F34C07EC4AFCC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuneTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		875C8E0D0592E687BD596A83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuneTalkUITests/Pods-TuneTalkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		891078792C157B766855BE08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuneTalkTests/Pods-TuneTalkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C52F0B3612324CC38060D44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuneTalkTests/Pods-TuneTalkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B43772DAEF490B4AA636686F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuneTalkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B73E60F87AF530DED08F5597 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuneTalkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83D7ED1020A696EB003B23DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +465,7 @@
 			files = (
 				83D7ED1A20A696EB003B23DA /* ViewController.swift in Sources */,
 				83D7ED1820A696EB003B23DA /* AppDelegate.swift in Sources */,
+				83D7ED4820A6B69F003B23DA /* SimilarArtistsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +629,7 @@
 		};
 		83D7ED3D20A696EC003B23DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5257C0FE4B97CFF13162E047 /* Pods-TuneTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +644,7 @@
 		};
 		83D7ED3E20A696EC003B23DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CBC417565D91462B752EAEE /* Pods-TuneTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +659,7 @@
 		};
 		83D7ED4020A696EC003B23DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A5AA4302995B4060EE011CD /* Pods-TuneTalkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +676,7 @@
 		};
 		83D7ED4120A696EC003B23DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E2D98F261681F623FA20CEE /* Pods-TuneTalkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +693,7 @@
 		};
 		83D7ED4320A696EC003B23DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9568391D0C6748D9757D677D /* Pods-TuneTalkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +709,7 @@
 		};
 		83D7ED4420A696EC003B23DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6279CA3A7A42CDCDE3F4D031 /* Pods-TuneTalkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
