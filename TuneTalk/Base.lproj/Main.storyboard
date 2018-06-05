@@ -72,14 +72,46 @@
                                                 <rect key="frame" x="164" y="853" width="46" height="30"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7NK-LM-Bc4">
+                                                <rect key="frame" x="20" y="24" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="Stb-XE-F0n"/>
+                                                    <constraint firstAttribute="width" constant="150" id="yKQ-vK-mMH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kanye West" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnp-of-Ue4">
+                                                <rect key="frame" x="197" y="24" width="147" height="31.5"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tmk-2I-mF9">
+                                                <rect key="frame" x="20" y="194" width="335" height="215"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="335" id="RyC-HI-b7w"/>
+                                                    <constraint firstAttribute="height" constant="215" id="obY-J9-Tg2"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="7NK-LM-Bc4" firstAttribute="leading" secondItem="ThT-5x-pYJ" secondAttribute="leading" constant="20" id="0Np-Qa-Rfv"/>
+                                            <constraint firstItem="7NK-LM-Bc4" firstAttribute="top" secondItem="ThT-5x-pYJ" secondAttribute="top" constant="24" id="2bs-3c-gZe"/>
                                             <constraint firstAttribute="trailing" secondItem="Mbx-1u-Ena" secondAttribute="trailing" constant="165" id="8DF-YP-prz"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tmk-2I-mF9" secondAttribute="trailing" constant="20" id="A1K-4S-tOj"/>
                                             <constraint firstItem="Mbx-1u-Ena" firstAttribute="top" secondItem="ThT-5x-pYJ" secondAttribute="top" constant="853" id="D6C-uD-hAa"/>
+                                            <constraint firstItem="gnp-of-Ue4" firstAttribute="top" secondItem="ThT-5x-pYJ" secondAttribute="top" constant="24" id="DPW-9c-V12"/>
                                             <constraint firstAttribute="height" constant="1000" id="Fp1-Cp-oH3"/>
                                             <constraint firstAttribute="bottom" secondItem="Mbx-1u-Ena" secondAttribute="bottom" constant="117" id="GUJ-4Q-jvS"/>
+                                            <constraint firstItem="Tmk-2I-mF9" firstAttribute="leading" secondItem="ThT-5x-pYJ" secondAttribute="leading" constant="20" id="Y5I-uy-JfM"/>
+                                            <constraint firstAttribute="trailing" secondItem="gnp-of-Ue4" secondAttribute="trailing" constant="31" id="ghH-nz-PKp"/>
                                             <constraint firstItem="Mbx-1u-Ena" firstAttribute="leading" secondItem="ThT-5x-pYJ" secondAttribute="leading" constant="164" id="kCo-df-MTy"/>
+                                            <constraint firstItem="Tmk-2I-mF9" firstAttribute="top" secondItem="7NK-LM-Bc4" secondAttribute="bottom" constant="20" id="nEV-8D-u5i"/>
+                                            <constraint firstItem="gnp-of-Ue4" firstAttribute="leading" secondItem="7NK-LM-Bc4" secondAttribute="trailing" constant="27" id="oVy-gf-6LR"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -103,10 +135,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="cfm-a0-Diq"/>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="artistBio" destination="Tmk-2I-mF9" id="qD4-5j-kNu"/>
+                        <outlet property="artistImage" destination="7NK-LM-Bc4" id="h7x-kN-g8E"/>
+                        <outlet property="artistName" destination="gnp-of-Ue4" id="THI-XI-bZp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgh-td-G5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1461.5999999999999" y="113.79310344827587"/>
+            <point key="canvasLocation" x="1461.5999999999999" y="113.3433283358321"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HtE-HY-BXD">

@@ -12,8 +12,12 @@ import AlamofireImage
 class SimilarArtistsViewController: UIViewController {
     
     var name = ""
-    var similarArtists: [[String : Any]] = []
+    var artist: [[String : Any]] = []
     let APIkey = "e1523431ee9c18604fb535cf31cdbcc8"
+    
+    @IBOutlet weak var artistImage: UIImageView!
+    @IBOutlet weak var artistName: UILabel!
+    @IBOutlet weak var artistBio: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +39,14 @@ class SimilarArtistsViewController: UIViewController {
                 print(error.localizedDescription)
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
-                print(dataDictionary)
+                let data = dataDictionary["artist"] as! [String : Any]
+                let summary = data["bio"] as! [String: Any]
+                let bio = summary["content"] as! String
+                let images = data["image"] as! [[String : Any]]
+                let imageURL = images[3]["#text"] as! String
+                print(bio)
+                print(imageURL)
+                //print(data)
             }
         }
         task.resume()
