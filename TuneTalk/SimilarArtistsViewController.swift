@@ -44,9 +44,10 @@ class SimilarArtistsViewController: UIViewController {
                 let bio = summary["content"] as! String
                 let images = data["image"] as! [[String : Any]]
                 let imageURL = images[3]["#text"] as! String
-                print(bio)
-                print(imageURL)
-                //print(data)
+                let image = URL(string: imageURL)!
+                self.artistName.text = self.name
+                self.artistBio.text = bio
+                self.artistImage.af_setImage(withURL: image)
             }
         }
         task.resume()
