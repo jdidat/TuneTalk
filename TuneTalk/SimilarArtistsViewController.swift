@@ -21,6 +21,8 @@ class SimilarArtistsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        artistBio!.layer.borderWidth = 1
+        artistBio!.layer.borderColor = UIColor.black.cgColor
         searchArtist()
     }
 
@@ -45,7 +47,7 @@ class SimilarArtistsViewController: UIViewController {
                 let images = data["image"] as! [[String : Any]]
                 let imageURL = images[3]["#text"] as! String
                 let image = URL(string: imageURL)!
-                self.artistName.text = self.name
+                self.artistName.text = self.name.replacingOccurrences(of: "+", with: " ")
                 self.artistBio.text = bio
                 self.artistImage.af_setImage(withURL: image)
             }
