@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -68,10 +69,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThT-5x-pYJ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbx-1u-Ena">
-                                                <rect key="frame" x="164" y="853" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7NK-LM-Bc4">
                                                 <rect key="frame" x="20" y="24" width="150" height="150"/>
                                                 <constraints>
@@ -96,22 +93,71 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist's Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxK-pU-XwU">
+                                                <rect key="frame" x="20" y="431" width="109" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="I6u-cQ-3aW">
+                                                <rect key="frame" x="20" y="472" width="335" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="uvV-1g-nWX"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C8h-Le-Bpb">
+                                                    <size key="itemSize" width="128" height="129"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumCell" id="bfy-EB-7Th" customClass="AlbumCollectionViewCell" customModule="TuneTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="128" height="129"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="129"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t3G-a3-4S8">
+                                                                    <rect key="frame" x="10" y="10" width="108" height="109"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottomMargin" secondItem="t3G-a3-4S8" secondAttribute="bottom" constant="2" id="1hy-J4-5IP"/>
+                                                            <constraint firstAttribute="trailingMargin" secondItem="t3G-a3-4S8" secondAttribute="trailing" constant="2" id="6rf-9B-qi8"/>
+                                                            <constraint firstItem="t3G-a3-4S8" firstAttribute="leading" secondItem="bfy-EB-7Th" secondAttribute="leadingMargin" constant="2" id="OFi-FN-Y8w"/>
+                                                            <constraint firstItem="t3G-a3-4S8" firstAttribute="top" secondItem="bfy-EB-7Th" secondAttribute="topMargin" constant="2" id="Qdg-Hb-aW9"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="albumCover" destination="t3G-a3-4S8" id="NdE-wv-6wH"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="n58-Iz-xNe" id="VsT-v5-Euv"/>
+                                                    <outlet property="delegate" destination="n58-Iz-xNe" id="nVy-7a-LIJ"/>
+                                                </connections>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="7NK-LM-Bc4" firstAttribute="leading" secondItem="ThT-5x-pYJ" secondAttribute="leading" constant="20" id="0Np-Qa-Rfv"/>
                                             <constraint firstItem="7NK-LM-Bc4" firstAttribute="top" secondItem="ThT-5x-pYJ" secondAttribute="top" constant="24" id="2bs-3c-gZe"/>
-                                            <constraint firstAttribute="trailing" secondItem="Mbx-1u-Ena" secondAttribute="trailing" constant="165" id="8DF-YP-prz"/>
+                                            <constraint firstItem="AxK-pU-XwU" firstAttribute="top" secondItem="Tmk-2I-mF9" secondAttribute="bottom" constant="22" id="5uF-mW-iXy"/>
                                             <constraint firstAttribute="trailing" secondItem="Tmk-2I-mF9" secondAttribute="trailing" constant="20" id="A1K-4S-tOj"/>
-                                            <constraint firstItem="Mbx-1u-Ena" firstAttribute="top" secondItem="ThT-5x-pYJ" secondAttribute="top" constant="853" id="D6C-uD-hAa"/>
                                             <constraint firstItem="gnp-of-Ue4" firstAttribute="top" secondItem="ThT-5x-pYJ" secondAttribute="top" constant="24" id="DPW-9c-V12"/>
                                             <constraint firstAttribute="height" constant="1000" id="Fp1-Cp-oH3"/>
-                                            <constraint firstAttribute="bottom" secondItem="Mbx-1u-Ena" secondAttribute="bottom" constant="117" id="GUJ-4Q-jvS"/>
+                                            <constraint firstAttribute="trailing" secondItem="I6u-cQ-3aW" secondAttribute="trailing" constant="20" id="HUX-1h-9Lg"/>
+                                            <constraint firstItem="I6u-cQ-3aW" firstAttribute="top" secondItem="AxK-pU-XwU" secondAttribute="bottom" constant="20" id="RpI-4Z-UDT"/>
+                                            <constraint firstAttribute="trailing" secondItem="AxK-pU-XwU" secondAttribute="trailing" constant="246" id="SS7-wc-GFj"/>
                                             <constraint firstItem="Tmk-2I-mF9" firstAttribute="leading" secondItem="ThT-5x-pYJ" secondAttribute="leading" constant="20" id="Y5I-uy-JfM"/>
                                             <constraint firstAttribute="trailing" secondItem="gnp-of-Ue4" secondAttribute="trailing" constant="31" id="ghH-nz-PKp"/>
-                                            <constraint firstItem="Mbx-1u-Ena" firstAttribute="leading" secondItem="ThT-5x-pYJ" secondAttribute="leading" constant="164" id="kCo-df-MTy"/>
+                                            <constraint firstItem="AxK-pU-XwU" firstAttribute="leading" secondItem="ThT-5x-pYJ" secondAttribute="leading" constant="20" id="l1P-2r-8qd"/>
                                             <constraint firstItem="Tmk-2I-mF9" firstAttribute="top" secondItem="7NK-LM-Bc4" secondAttribute="bottom" constant="20" id="nEV-8D-u5i"/>
                                             <constraint firstItem="gnp-of-Ue4" firstAttribute="leading" secondItem="7NK-LM-Bc4" secondAttribute="trailing" constant="27" id="oVy-gf-6LR"/>
+                                            <constraint firstItem="I6u-cQ-3aW" firstAttribute="leading" secondItem="ThT-5x-pYJ" secondAttribute="leading" constant="20" id="og5-qz-9G3"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -136,6 +182,7 @@
                     <navigationItem key="navigationItem" id="cfm-a0-Diq"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="albumCollectionView" destination="I6u-cQ-3aW" id="phn-kO-TcK"/>
                         <outlet property="artistBio" destination="Tmk-2I-mF9" id="qD4-5j-kNu"/>
                         <outlet property="artistImage" destination="7NK-LM-Bc4" id="h7x-kN-g8E"/>
                         <outlet property="artistName" destination="gnp-of-Ue4" id="THI-XI-bZp"/>
