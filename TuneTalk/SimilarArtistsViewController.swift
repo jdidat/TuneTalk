@@ -25,8 +25,9 @@ class SimilarArtistsViewController: UIViewController, UICollectionViewDataSource
         let albumImages = album["image"] as! [[String : Any]]
         let albumImage = albumImages[2]["#text"] as! String
         print(albumImage)
-        let albumURL = URL(string: albumImage)
-        cell.albumCover.af_setImage(withURL: albumURL!)
+        if let albumURL = URL(string: albumImage) {
+            cell.albumCover.af_setImage(withURL: albumURL)
+        }
         return cell
     }
     
