@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let similarArtistsViewController = segue.destination as! SimilarArtistsViewController
+        let similarArtistsViewController = segue.destination as! ArtistDetailsViewController
         similarArtistsViewController.name = self.name
     }
     

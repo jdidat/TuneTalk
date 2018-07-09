@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="618" y="114"/>
         </scene>
-        <!--Similar Artists View Controller-->
+        <!--Artist Details View Controller-->
         <scene sceneID="v2W-U1-5fm">
             <objects>
-                <viewController id="n58-Iz-xNe" customClass="SimilarArtistsViewController" customModule="TuneTalk" sceneMemberID="viewController">
+                <viewController id="n58-Iz-xNe" customClass="ArtistDetailsViewController" customModule="TuneTalk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yij-aK-84t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,6 +251,7 @@
                         <outlet property="artistBio" destination="Tmk-2I-mF9" id="qD4-5j-kNu"/>
                         <outlet property="artistImage" destination="7NK-LM-Bc4" id="h7x-kN-g8E"/>
                         <outlet property="artistName" destination="gnp-of-Ue4" id="THI-XI-bZp"/>
+                        <outlet property="songCollectionView" destination="BCF-vU-D3J" id="nNq-uQ-1mi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgh-td-G5c" userLabel="First Responder" sceneMemberID="firstResponder"/>

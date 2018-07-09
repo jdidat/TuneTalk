@@ -16,7 +16,7 @@
 		83D7ED2220A696EB003B23DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D7ED2020A696EB003B23DA /* LaunchScreen.storyboard */; };
 		83D7ED2D20A696EB003B23DA /* TuneTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED2C20A696EB003B23DA /* TuneTalkTests.swift */; };
 		83D7ED3820A696EC003B23DA /* TuneTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED3720A696EC003B23DA /* TuneTalkUITests.swift */; };
-		83D7ED4820A6B69F003B23DA /* SimilarArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED4720A6B69F003B23DA /* SimilarArtistsViewController.swift */; };
+		83D7ED4820A6B69F003B23DA /* ArtistDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED4720A6B69F003B23DA /* ArtistDetailsViewController.swift */; };
 		C5017F5C591246354BBECB72 /* Pods_TuneTalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC780411EF8E44CDD86C2CF5 /* Pods_TuneTalkTests.framework */; };
 		C8F87008FCAFC8326412096A /* Pods_TuneTalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2379D6C418EDE4C9DE111CA3 /* Pods_TuneTalkUITests.framework */; };
 		F2DCC6E08A393A86BB0546D5 /* Pods_TuneTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19C6A59346778EA6075213C /* Pods_TuneTalk.framework */; };
@@ -60,7 +60,7 @@
 		83D7ED3320A696EC003B23DA /* TuneTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7ED3720A696EC003B23DA /* TuneTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneTalkUITests.swift; sourceTree = "<group>"; };
 		83D7ED3920A696EC003B23DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83D7ED4720A6B69F003B23DA /* SimilarArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarArtistsViewController.swift; sourceTree = "<group>"; };
+		83D7ED4720A6B69F003B23DA /* ArtistDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailsViewController.swift; sourceTree = "<group>"; };
 		8E2D98F261681F623FA20CEE /* Pods-TuneTalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalkTests/Pods-TuneTalkTests.release.xcconfig"; sourceTree = "<group>"; };
 		9568391D0C6748D9757D677D /* Pods-TuneTalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalkUITests/Pods-TuneTalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A19C6A59346778EA6075213C /* Pods_TuneTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuneTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +139,7 @@
 				83D7ED1E20A696EB003B23DA /* Assets.xcassets */,
 				83D7ED2020A696EB003B23DA /* LaunchScreen.storyboard */,
 				83D7ED2320A696EB003B23DA /* Info.plist */,
-				83D7ED4720A6B69F003B23DA /* SimilarArtistsViewController.swift */,
+				83D7ED4720A6B69F003B23DA /* ArtistDetailsViewController.swift */,
 				83C4441020C828BA00E4725E /* AlbumCollectionViewCell.swift */,
 				83BAED5420F3A4FD000DC6C9 /* SongCollectionViewCell.swift */,
 			);
@@ -473,7 +473,7 @@
 				83D7ED1A20A696EB003B23DA /* ViewController.swift in Sources */,
 				83D7ED1820A696EB003B23DA /* AppDelegate.swift in Sources */,
 				83BAED5520F3A4FD000DC6C9 /* SongCollectionViewCell.swift in Sources */,
-				83D7ED4820A6B69F003B23DA /* SimilarArtistsViewController.swift in Sources */,
+				83D7ED4820A6B69F003B23DA /* ArtistDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

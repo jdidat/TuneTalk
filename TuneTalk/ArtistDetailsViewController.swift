@@ -9,11 +9,14 @@
 import UIKit
 import AlamofireImage
 
-class SimilarArtistsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var albumCollectionView: UICollectionView!
+    @IBOutlet weak var songCollectionView: UICollectionView!
     
     var albums: [[String : Any]] = []
+    var songs: [[String : Any]] = []
+    var similarArtists: [[String : Any]] = []
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return albums.count
