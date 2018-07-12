@@ -49,10 +49,8 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SongCell", for: indexPath) as! SongCollectionViewCell
             let song = songs[indexPath.item]
             let songName = song["name"] as! String
-            print(songName)
             let songImages = song["image"] as! [[String : Any]]
             let songImage = songImages[2]["#text"] as! String
-            print(songImage)
             cell.songTitle.text = songName
             if let songURL = URL(string: songImage) {
                 cell.songCover.af_setImage(withURL: songURL)
@@ -60,7 +58,11 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
             return cell
         }
         else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SimilarArtistCell", for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SimilarArtistCell", for: indexPath) as! SimiarArtistCollectionViewCell
+            let artist = similarArtists[indexPath.item]
+            let artistImages = artist["image"]
+            let artistImage = artistImages[2]["#text"] as! String
+            
         }
     }
     
@@ -156,6 +158,10 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
             }
         }
         task.resume()
+    }
+    
+    @objc func getSimilarArtists(success: @escaping ([[String : Any]]) -> (), failure: @escaping (Error) -> ()) {
+        
     }
     /*
     // MARK: - Navigation

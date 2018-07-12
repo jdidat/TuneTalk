@@ -215,7 +215,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SimilarArtistCell" id="1aM-de-HnY">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SimilarArtistCell" id="1aM-de-HnY" customClass="SimilarArtistCollectionViewCell" customModule="TuneTalk" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -233,6 +233,10 @@
                                                             <constraint firstItem="rcr-Zf-OiN" firstAttribute="top" secondItem="1aM-de-HnY" secondAttribute="topMargin" constant="2" id="Y1N-Kj-ztU"/>
                                                             <constraint firstAttribute="trailingMargin" secondItem="rcr-Zf-OiN" secondAttribute="trailing" constant="2" id="dzE-jX-rqA"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outlet property="ArtistImage" destination="rcr-Zf-OiN" id="SLO-8k-Ulh"/>
+                                                            <outlet property="artistImage" destination="rcr-Zf-OiN" id="L9G-Vt-agH"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
