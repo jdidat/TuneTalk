@@ -58,11 +58,14 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
             return cell
         }
         else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SimilarArtistCell", for: indexPath) as! SimiarArtistCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SimilarArtistCell", for: indexPath) as! SimilarArtistCollectionViewCell
             let artist = similarArtists[indexPath.item]
-            let artistImages = artist["image"]
+            let artistImages = artist["image"] as! [[String : Any]]
             let artistImage = artistImages[2]["#text"] as! String
-            
+            if let artistImageURL = URL(string: artistImage) {
+                cell.artistImage.af_setImage(withURL: artistImageURL)
+            }
+            return cell
         }
     }
     

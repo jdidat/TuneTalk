@@ -12,5 +12,4 @@ class SimilarArtistCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var artistImage: UIImageView!
     
-    
 }

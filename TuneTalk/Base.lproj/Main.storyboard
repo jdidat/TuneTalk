@@ -234,7 +234,6 @@
                                                             <constraint firstAttribute="trailingMargin" secondItem="rcr-Zf-OiN" secondAttribute="trailing" constant="2" id="dzE-jX-rqA"/>
                                                         </constraints>
                                                         <connections>
-                                                            <outlet property="ArtistImage" destination="rcr-Zf-OiN" id="SLO-8k-Ulh"/>
                                                             <outlet property="artistImage" destination="rcr-Zf-OiN" id="L9G-Vt-agH"/>
                                                         </connections>
                                                     </collectionViewCell>
