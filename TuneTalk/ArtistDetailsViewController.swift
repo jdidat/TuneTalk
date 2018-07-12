@@ -19,7 +19,14 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
     var similarArtists: [[String : Any]] = []
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return albums.count
+        var count = 0;
+        if collectionView == self.albumCollectionView {
+            count = albums.count
+        }
+        else {
+            count = songs.count
+        }
+        return count;
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -32,12 +39,22 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
             if let albumURL = URL(string: albumImage) {
                 cell.albumCover.af_setImage(withURL: albumURL)
             }
+            return cell
         }
-        if collectionView == self.songCollectionView {
+        else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SongCell", for: indexPath) as! SongCollectionViewCell
             let song = songs[indexPath.item]
+            let songName = song["name"] as! String
+            print(songName)
+            let songImages = song["image"] as! [[String : Any]]
+            let songImage = songImages[2]["#text"] as! String
+            print(songImage)
+            cell.songTitle.text = songName
+            if let songURL = URL(string: songImage) {
+                cell.songCover.af_setImage(withURL: songURL)
+            }
+            return cell
         }
-        return cell
     }
     
     var name = ""
@@ -59,7 +76,7 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
         }, failure: { (error) in })
         getArtistsSongs(success: { (data) in
             self.songs = data
-        }), failure: { (error) in })
+        }, failure: { (error) in })
         print(albums)
         print(songs)
     }
@@ -126,6 +143,7 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
                 let data = dataDictionary["toptracks"] as! [String : Any]
                 let songs = data["track"] as! [[String : Any]]
+                print(songs)
                 success(songs)
                 self.songCollectionView.reloadData()
             }
