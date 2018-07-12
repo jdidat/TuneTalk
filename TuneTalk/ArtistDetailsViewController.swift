@@ -23,13 +23,19 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCell", for: indexPath) as! AlbumCollectionViewCell
-        let album = albums[indexPath.item]
-        let albumImages = album["image"] as! [[String : Any]]
-        let albumImage = albumImages[2]["#text"] as! String
-        print(albumImage)
-        if let albumURL = URL(string: albumImage) {
-            cell.albumCover.af_setImage(withURL: albumURL)
+        if collectionView == self.albumCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCell", for: indexPath) as! AlbumCollectionViewCell
+            let album = albums[indexPath.item]
+            let albumImages = album["image"] as! [[String : Any]]
+            let albumImage = albumImages[2]["#text"] as! String
+            print(albumImage)
+            if let albumURL = URL(string: albumImage) {
+                cell.albumCover.af_setImage(withURL: albumURL)
+            }
+        }
+        if collectionView == self.songCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SongCell", for: indexPath) as! SongCollectionViewCell
+            let song = songs[indexPath.item]
         }
         return cell
     }
@@ -51,7 +57,11 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
         getArtistsAlbums(success: { (data) in
             self.albums = data
         }, failure: { (error) in })
+        getArtistsSongs(success: { (data) in
+            self.songs = data
+        }), failure: { (error) in })
         print(albums)
+        print(songs)
     }
 
     override func didReceiveMemoryWarning() {
@@ -98,6 +108,26 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
                 let albums = data["album"] as! [[String : Any]]
                 success(albums)
                 self.albumCollectionView.reloadData()
+            }
+        }
+        task.resume()
+    }
+    
+    @objc func getArtistsSongs(success: @escaping ([[String : Any]]) -> (), failure: @escaping (Error) -> ()) {
+        let url = URL(string: "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + self.name + "&api_key=e1523431ee9c18604fb535cf31cdbcc8&format=json")!
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10)
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) {
+            (data, response, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            else if let data = data {
+                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
+                let data = dataDictionary["toptracks"] as! [String : Any]
+                let songs = data["track"] as! [[String : Any]]
+                success(songs)
+                self.songCollectionView.reloadData()
             }
         }
         task.resume()
