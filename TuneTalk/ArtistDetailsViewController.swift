@@ -13,6 +13,7 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
     
     @IBOutlet weak var albumCollectionView: UICollectionView!
     @IBOutlet weak var songCollectionView: UICollectionView!
+    @IBOutlet weak var similarArtistsCollectionView: UICollectionView!
     
     var albums: [[String : Any]] = []
     var songs: [[String : Any]] = []
@@ -23,8 +24,11 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
         if collectionView == self.albumCollectionView {
             count = albums.count
         }
-        else {
+        else if collectionView == self.songCollectionView {
             count = songs.count
+        }
+        else {
+            count = similarArtists.count
         }
         return count;
     }
@@ -41,7 +45,7 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
             }
             return cell
         }
-        else {
+        else if collectionView == self.songCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SongCell", for: indexPath) as! SongCollectionViewCell
             let song = songs[indexPath.item]
             let songName = song["name"] as! String
@@ -54,6 +58,9 @@ class ArtistDetailsViewController: UIViewController, UICollectionViewDataSource,
                 cell.songCover.af_setImage(withURL: songURL)
             }
             return cell
+        }
+        else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SimilarArtistCell", for: indexPath)
         }
     }
     

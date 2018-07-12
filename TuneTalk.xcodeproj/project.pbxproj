@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83BAED5520F3A4FD000DC6C9 /* SongCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAED5420F3A4FD000DC6C9 /* SongCollectionViewCell.swift */; };
+		83BAED5720F70CC9000DC6C9 /* SimilarArtistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAED5620F70CC9000DC6C9 /* SimilarArtistCollectionViewCell.swift */; };
 		83C4441120C828BA00E4725E /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4441020C828BA00E4725E /* AlbumCollectionViewCell.swift */; };
 		83D7ED1820A696EB003B23DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED1720A696EB003B23DA /* AppDelegate.swift */; };
 		83D7ED1A20A696EB003B23DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7ED1920A696EB003B23DA /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		5257C0FE4B97CFF13162E047 /* Pods-TuneTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalk/Pods-TuneTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		6279CA3A7A42CDCDE3F4D031 /* Pods-TuneTalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneTalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuneTalkUITests/Pods-TuneTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		83BAED5420F3A4FD000DC6C9 /* SongCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollectionViewCell.swift; sourceTree = "<group>"; };
+		83BAED5620F70CC9000DC6C9 /* SimilarArtistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarArtistCollectionViewCell.swift; sourceTree = "<group>"; };
 		83C4441020C828BA00E4725E /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		83D7ED1420A696EB003B23DA /* TuneTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuneTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7ED1720A696EB003B23DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				83D7ED4720A6B69F003B23DA /* ArtistDetailsViewController.swift */,
 				83C4441020C828BA00E4725E /* AlbumCollectionViewCell.swift */,
 				83BAED5420F3A4FD000DC6C9 /* SongCollectionViewCell.swift */,
+				83BAED5620F70CC9000DC6C9 /* SimilarArtistCollectionViewCell.swift */,
 			);
 			path = TuneTalk;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				83C4441120C828BA00E4725E /* AlbumCollectionViewCell.swift in Sources */,
 				83D7ED1A20A696EB003B23DA /* ViewController.swift in Sources */,
 				83D7ED1820A696EB003B23DA /* AppDelegate.swift in Sources */,
+				83BAED5720F70CC9000DC6C9 /* SimilarArtistCollectionViewCell.swift in Sources */,
 				83BAED5520F3A4FD000DC6C9 /* SongCollectionViewCell.swift in Sources */,
 				83D7ED4820A6B69F003B23DA /* ArtistDetailsViewController.swift in Sources */,
 			);
